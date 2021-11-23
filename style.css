@@ -4,12 +4,15 @@
 	overflow:hidden;
 	font-family: Helvetica, Arial, sans-serif;
 }
-
+p{
+	margin: 1rem 0 1rem 0;
+}
 body{
 	background-color:#FFF8E7;
 	margin:0;
 	padding:0;			
 }
+
 
 .Container div{
 	width:50vw;	
@@ -48,7 +51,7 @@ nav li a{
 
 nav li a:hover{
 	text-decoration:underline;
-	color:inherit;
+	color:#FF424D;
 }
 
 .Container{
@@ -76,6 +79,10 @@ nav li a:hover{
 	background:#FFF8E7;			
 }
 
+.Heading:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
 .About{
 	background-color: #121E23;
 	color:#FFF8E7;
@@ -84,16 +91,15 @@ nav li a:hover{
 .about-heading{
 	margin-bottom: 1.09215rem;
 	font-size: 2.4rem;
-letter-spacing: -0.05em;
+	width:490px;
 font-weight: 700;
 line-height: 1.2135;
-justify-content: center;
-overflow-wrap: break-word;
-    hyphens: manual;
+
 	
 }
 
 .about-label{
+	width: 40vw;
 	font-family:sans-serif;
 	font-weight:700;
 	font-size:1rem;
@@ -114,6 +120,28 @@ overflow-wrap: break-word;
 	background-repeat: repeat-x;
 	background-size: 1px 1px;
 }	
+ .About .About-contain{
+	width: 50vw;
+}
+
+.About .About-contain p{
+	width: 40vw;
+}
+.about-heading{
+	width: 40vw;
+}
+.About-contain section{
+	padding-bottom: 10vw;
+}
+
+.Services h5,.Our-approch h5{
+	margin-top: 2.9124rem;
+	font-weight: 700;
+line-height: 1.618;
+text-transform: uppercase;
+font-size: 1rem;
+letter-spacing: 0.04em;
+}
 
 .About-contain a{
 	display:inline-block;
@@ -129,9 +157,54 @@ overflow-wrap: break-word;
 	color:inherit;
 	text-decoration:none;
 }
+.About-contain-para{
+	font-family: "GraebenbachMono Web", "Monaco", "Courier New", Courier, monospace;
+width: 369.2px;
+
+letter-spacing: -0.144px;
+line-height: 23.3px;
+margin-bottom: 17.4744px
+}
+.services h2{
+	margin-top: 4.3686rem;
+margin-bottom: 1.09215rem;
+}
+
+.client-logo{
+	display: flex;
+	flex-direction: column;
+}
+.client-logo img{
+	width: 40vw;
+}
+
+.services{
+	width: 40vw;
+}
+.services{
+    width: 40vw;
+}
+
 .social{
 		text-align:center;
+		width: 40vw;
 
+}
+
+.Card h2{
+	font-weight: 700;
+line-height: 1.618;
+text-transform: uppercase;
+font-size: 1rem;
+letter-spacing: 0.04em;
+}
+
+.Card p{
+	display: block;
+	color: #FF424D;
+	text-align: center;
+	margin-top: 0;
+	font-size: 0.75rem;
 }
 
 .OurTeam{
@@ -140,27 +213,24 @@ overflow-wrap: break-word;
 			flex-direction:column;
 		}
 		.TeamMembers{
-			max-width: 50vw;
+			max-width: 45vw;
 			display: flex;
 			flex-direction:row;
 		}
-		.Card{
-			
-			height: 300px;
+		.TeamMembers .Card{
+			width: 14vw;
+			height: 220px;
 			text-align: center;
 
 		}
-		.CardImage{
-			width: 15vw;
-			height: 100px;
-			display: flex;
-			justify-content: center;
-		}
-		.CardImage img{
+		.Card img{
 			width: 100px;
 			height: 100px;
 			border-radius: 50%;
 			justify-self: center;
+		}
+		.TeamMembers .Card p{
+			width: 13vw;
 		}
 
 .Labs{
@@ -177,6 +247,11 @@ overflow-wrap: break-word;
 	vertical-align:baseline;
 }
 
+.Lab-label:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
 .Lab-heading{
 	font-size:2.4rem;
 	letter-spacing: -0.05em;
@@ -188,10 +263,9 @@ overflow-wrap: break-word;
 
 .About-contain{
 	font-variant:normal;
-	word-break:break-word;
 	text-overflow: ellipsis;
-	word-break: break-all; 
 }
+
 .Blog{
 	background:#FFF8E7;
 	color:#2ddb87;
@@ -239,3 +313,8 @@ li.blogitems-item{
 	padding:0.5rem 0 5rem;
 }
 
+li.blogitems-item:hover,.meta{
+	color:#b3aea2;
+	cursor: pointer;
+
+}
