@@ -3,6 +3,7 @@
 	padding:0px;
 	overflow:hidden;
 	font-family: Helvetica, Arial, sans-serif;
+	scroll-behavior: smooth;
 }
 p{
 	margin: 1rem 0 1rem 0;
@@ -31,6 +32,10 @@ nav{
 	font-weight:50;
 	font-size:1.4rem;
 	
+}
+
+.menu_mobile{
+	display: none;
 }
 
 nav ul{
@@ -63,16 +68,22 @@ nav li a:hover{
 }
 		
 
-
+.heading1:hover .Home-page{
+	transform: translateX(100%);
+}
 .Case-studies:hover,.About:hover,.Labs:hover,.Blog:hover{
 	overflow-y:scroll;
 }
 
-
+.Home-page img{
+	height: 100%;
+}
  
 .Home-page{
 	background-color:#FFF8E7;
-	padding-top:150px;
+	padding-top:5%;
+	width:100%; 
+	height:100%;
 }
 
 .Case-studies{
@@ -82,6 +93,8 @@ nav li a:hover{
 .Heading:hover{
 	text-decoration: underline;
 	cursor: pointer;
+	transform: translate(-2%,0%);
+	font-size: 4rem;
 }
 .About{
 	background-color: #121E23;
@@ -132,6 +145,11 @@ line-height: 1.2135;
 }
 .About-contain section{
 	padding-bottom: 10vw;
+}
+.image{
+	width:50vw;
+	padding:0px;
+	margin:0px;
 }
 
 .Services h5,.Our-approch h5{
@@ -239,17 +257,25 @@ letter-spacing: 0.04em;
 		
 }		
 
+.Lab-content{
+	width:fit-content;
+	overflow:hidden;
+}
+
 .Lab-label{
 	font-size:3.5rem;
 	font-weight:600;
 	line-height:1.3;
 	letter-spacing:-0.06em;
 	vertical-align:baseline;
+
 }
 
 .Lab-label:hover{
 	text-decoration: underline;
 	cursor: pointer;
+	transform: translate(-2%,0);
+	font-size: 4rem;
 }
 
 .Lab-heading{
@@ -259,6 +285,7 @@ letter-spacing: 0.04em;
 	padding-bottom:20px;
 	font-variant:normal;
 	word-break:break-word;
+	padding-right: 20%;
 }
 
 .About-contain{
@@ -270,11 +297,15 @@ letter-spacing: 0.04em;
 	background:#FFF8E7;
 	color:#2ddb87;
 }
+.Blog-items{
+	max-width:700px;
+	overflow:auto;
+}
 
 .Heading{
 	color:#FF424D;
-	font-weight:600;
-	font-size:3.2rem;
+	font-weight: bold;
+	font-size: 3rem;
 }
 .Headings,.Lab-content,.Blog-items,.About-contain{
 	padding:200px 0 0 90px;
@@ -292,11 +323,15 @@ h3{
 .preview{
 	font-family:Palatino, Georgia, serif;
 	font-weight:400;
-	max-width:400;
+	
 	margin-left:2rem;
 	font-size:1rem;
 	line-height:1.618;
 	letter-spacing:normal;
+	
+		word-break: break-word;
+		padding-right: 20%;
+		
 }	
 
 .meta{
@@ -313,8 +348,95 @@ li.blogitems-item{
 	padding:0.5rem 0 5rem;
 }
 
-li.blogitems-item:hover,.meta{
+li.blogitems-item:hover, .meta{
 	color:#b3aea2;
 	cursor: pointer;
+	display:absolute;
+}
+@media all and (max-width:700px){
+	.Container{
+		display:flex;
+		flex-direction: column;
+		background: #FFF8E7;
+		height: auto;
+		width: auto;
+		padding-top: 100px;
+	}
+	.Container div {
+		
+		/*box-sizing: none;*/
+		width: auto;
+		justify-content: normal;
 
+
+	}
+	* {
+		overflow-x:hidden ;
+		overflow-y: auto;
+	}	
+	.About .About-contain,.services, .about-heading, .About .About-contain p, .services {
+		width: auto;
+		}
+		.Home-page{
+		padding: 0%;
+		}
+		.Headings,.Lab-content,.Blog-items,.About-contain{
+			padding: 50px 10px 90px 10px;
+}
+.image{
+	width: auto;
+	padding: 0px;
+}
+
+.about-label{
+	width: auto;
+}
+.client-logo img {
+    width: auto;
+}
+.social {
+    
+    width: auto;
+}
+.TeamMembers .Card {
+    width: 700px;
+    height: 220px;
+}
+.TeamMembers {
+    max-width: 700px;
+}
+.header{
+	position: relative;
+}
+.logo {
+    position: absolute;
+    left: 50px;
+    top: 30px;
+	
+}
+nav{
+	position: fixed;
+	display: none;
+	
+}
+.menu_mobile{
+	display: block;
+	position: fixed;
+	top: 50px;
+	right: 40px;
+	
+}
+.fa-bars{
+color:#FF424D ;
+font-size: 130%;
+}
+
+.Heading{
+	
+	font-size: 1.5rem;
+}
+
+.Heading:hover{
+	font-size: 2rem;
+}
 }
